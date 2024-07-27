@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Nunito", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  </style>
+  <style type="text/tailwindcss">
+    @layer utilities {
+          
+          .bg-transparent-dark{
+           background-image: linear-gradient(0deg, #000000, transparent 80%);
+          }
+          
+        }
+      </style>
+  <script>
+    tailwind.config = {
+      content: [
+
+      ],
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            light: "#ffffff",
+            "opacity-light-0.7": "rgba(255, 255, 255, 0.7)",
+          },
+          backgroundColor: {
+            light: "#ffffff",
+            "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+            "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+            "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="h-[100vh] w-[100vw] flex justify-center items-center border">
+    <div class="relative w-[400px] h-[250px]  cursor-pointer  hover:scale-90 duration-500 ease-in-out">
+      <img
+        src="https://variety.com/wp-content/uploads/2024/07/Screen-Shot-2024-07-19-at-10.05.02-AM.png?w=1000&h=667&crop=1"
+        alt="thumb_url" class="w-full h-full object-cover rounded-xl shadow-md ">
+      <div class="w-full h-[50%] bg-transparent-dark absolute bottom-0 left-0  rounded-b-xl"></div>
+      <div class="flex flex-col gap-1  absolute top-5 right-5">
+        <span class="inline-flex items-center gap-1  rounded-full bg-opacity-dark-0.5 h-[30px] px-3">
+          <i class="fa-solid fa-star text-[12px] text-orange-400"></i>
+          <p class="text-[13px] text-light font-[700] tracking-widest">4.7/5</p>
+        </span>
+
+      </div>
+      <p class="absolute top-5 left-5 px-3 py-[0.15rem] rounded-full bg-light font-[700] text-[12px]">🔥 Phim mới</p>
+      <div class="absolute bottom-5 left-5 flex flex-col gap-1 w-[60%]">
+        <div class="flex flex-col">
+          <p class="text-light text-[20px] font-[700] w-full truncate">Deadpool & Wolverine</p>
+          <span class="inline-flex item-end gap-2">
+            <p class="text-light text-[11px] italic">(2024)</p>
+            <p class="text-light text-[10px] rounded-full italic text-opacity-light-0.7">
+              Cập nhật: 1 giờ trước
+            </p>
+          </span>
+        </div>
+        <ul class="flex items-center gap-1">
+          <li class="bg-opacity-light-0.6  px-2 rounded-full text-[11px] font-[800] shadow-lg">Action</li>
+          <li class="bg-opacity-light-0.6  px-2 rounded-full text-[11px] font-[800] shadow-lg">Comedy</li>
+          <li class="bg-opacity-light-0.6  px-2 rounded-full text-[11px] font-[800] shadow-lg">Adventure</li>
+        </ul>
+      </div>
+      <div class="absolute right-5 bottom-5 flex items-center justify-end gap-1 w-[30%] h-[35px]">
+        <button
+          class="w-[80px] h-full flex items-center justify-center gap-2 rounded-full bg-opacity-light-0.5 group/btn-play hover:bg-light shadow-lg transition-all duration-300 ease-in-out">
+          <i
+            class="fa-solid fa-circle-play text-[20px] group-hover/btn-play:text-[black] text-light transition-all duration-300 ease-in-out"></i>
+          <p
+            class="text-[13px] font-[700] text-light group-hover/btn-play:text-[black] transition-all duration-300 ease-in-out">
+            Xem</p>
+        </button>
+        <button
+          class="w-[35px] h-full rounded-full bg-opacity-light-0.5 flex items-center justify-center shadow-lg group/btn-plus  hover:bg-light transition-all duration-300 ease-in-out">
+          <i
+            class="fa-solid fa-plus text-[15px] text-light group-hover/btn-plus:text-[black] transition-all duration-300 ease-in-out"></i>
+        </button>
+      </div>
+    </div>
+</body>
+
+</html>
