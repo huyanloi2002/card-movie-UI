@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <title>Card Trending Movie</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Nunito", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  </style>
+  <style type="text/tailwindcss">
+    @layer utilities {
+          
+          .bg-transparent-dark{
+           background-image: linear-gradient(0deg, #000000, transparent 100%);
+          }
+          
+        }
+      </style>
+  <script>
+    tailwind.config = {
+      content: [
+
+      ],
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            light: "#ffffff",
+            "opacity-light-0.7": "rgba(255, 255, 255, 0.7)",
+            "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
+            "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+            "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+          },
+          backgroundColor: {
+            light: "#ffffff",
+            "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
+            "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+            "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+            "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
+            "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="w-[100vw] h-[100vh] flex items-center justify-center bg-opacity-dark-0.5">
+    <div class="w-[700px] h-[350px] relative  cursor-pointer  hover:scale-90 duration-500 ease-in-out">
+      <img src="https://i.insider.com/66a0094480d4d5da13d672ad?width=1200&format=jpeg" alt="thumb-url"
+        class="w-full h-full object-cover rounded-xl">
+      <div class="absolute bottom-0 h-[70%] w-full bg-transparent-dark rounded-b-xl"></div>
+      <p class="absolute top-5 left-5 px-3 py-[0.15rem] rounded-full bg-light font-[700] text-[12px]">
+        🔥 Phim xu hướng
+      </p>
+      <div class="absolute top-5 right-5">
+        <span class="inline-flex items-center gap-1 px-3 h-[30px] rounded-full bg-opacity-dark-0.6 text-green-300">
+          <i class="fa-solid fa-circle text-[8px] "></i>
+          <p class="text-[12px] font-[700]">Đang chiếu</p>
+        </span>
+        <span class="inline-flex items-center gap-1 px-3 h-[30px] rounded-full bg-opacity-dark-0.6 text-light">
+          <i class="fa-solid fa-eye text-[12px] text-purple-500"></i>
+          <p class="text-[12px] font-[700]">9999</p>
+        </span>
+        <span class="inline-flex items-center gap-1 px-3 h-[30px] rounded-full bg-opacity-dark-0.6 text-light">
+          <i class="fa-solid fa-star text-[12px] text-orange-400"></i>
+          <p class="text-[12px] font-[700] tracking-widest">4.7/5.0</p>
+        </span>
+      </div>
+      <div class="absolute bottom-5 w-full px-5 flex flex-col gap-1 ">
+        <p class="text-[30px] uppercase text-light font-[900] w-[80%] line-clamp-1 leading-7">
+          Deadpool &
+          Wolverine</p>
+        <span class="text-opacity-light-0.6 font-[700] inline-flex items-center gap-1">
+          <i class="fa-solid fa-circle text-[5px] text-red-500"></i>
+          <p class="text-[12px]">Phim lẻ | 2024 | Vietsub | FHD | 1h30p/tập</p>
+        </span>
+        <ul class="flex items-center gap-1">
+          <li class="bg-orange-400  px-2 rounded-full text-[11px] font-[800] shadow-lg">Action</li>
+          <li class="bg-orange-400  px-2 rounded-full text-[11px] font-[800] shadow-lg">Comedy</li>
+          <li class="bg-orange-400  px-2 rounded-full text-[11px] font-[800] shadow-lg">Adventure</li>
+        </ul>
+        <blockquote class="text-opacity-light-0.7 text-[12px] italic font-[500] w-[50%] line-clamp-2 leading-4">
+          Wolverine is
+          recovering
+          from his
+          injuries when
+          he crosses
+          paths with
+          the loudmouth Deadpool. They
+          team up to defeat a common enemy (2024), ongoing in MBTV.</blockquote>
+        <div class="flex items-center gap-2 h-[18px] mt-2">
+          <span class="inline-flex items-center gap-1 h-full">
+            <img
+              src="https://yt3.googleusercontent.com/weD7WfgxB3sjFX7Yr4RBk3oAYKYLT4yjb9N3yK10VwF1Pmusidh7xqk1tAP23QpW1rur2Gst0s4=s900-c-k-c0x00ffffff-no-rj"
+              alt="imdb-logo" class="h-full aspect-square	rounded-md object-cover">
+            <p class="text-[13px] font-[700] text-light">4.7</p>
+          </span>
+          <i class="fa-solid fa-circle text-[4px] text-opacity-light-0.6"></i>
+          <span class="inline-flex items-center gap-1 h-full">
+            <img src="https://cdn-icons-png.freepik.com/256/11849/11849408.png?semt=ais_hybrid" alt="country-logo"
+              class="h-full object-cover rounded-md">
+            <p class="text-[12px] font-[700] text-light">USA</p>
+          </span>
+        </div>
+      </div>
+      <div class="absolute flex items-center right-5 bottom-5 gap-1 h-[35px] mt-1">
+        <button
+          class="w-[100px] h-full flex items-center justify-center gap-3 rounded-full bg-opacity-light-0.5 group/btn-play hover:bg-light shadow-lg transition-all duration-300 ease-in-out">
+          <i
+            class="fa-solid fa-circle-play text-[22px] group-hover/btn-play:text-[black] text-light transition-all duration-300 ease-in-out"></i>
+          <p
+            class="text-[17px] font-[700] text-light group-hover/btn-play:text-[black] transition-all duration-300 ease-in-out">
+            Xem</p>
+        </button>
+        <button
+          class="w-[35px] h-full rounded-full bg-opacity-light-0.5 flex items-center justify-center shadow-lg group/btn-plus  hover:bg-light transition-all duration-300 ease-in-out">
+          <i
+            class="fa-solid fa-plus text-[14px] text-light group-hover/btn-plus:text-[black] transition-all duration-300 ease-in-out"></i>
+        </button>
+        <button
+          class="w-[35px] h-full rounded-full bg-opacity-light-0.5 flex items-center justify-center shadow-lg group/btn-save  hover:bg-light transition-all duration-300 ease-in-out">
+          <i
+            class="fa-solid fa-bookmark text-[14px] text-light group-hover/btn-save:text-[black] transition-all duration-300 ease-in-out"></i>
+        </button>
+        <button
+          class="w-[35px] h-full rounded-full bg-opacity-light-0.5 flex items-center justify-center shadow-lg group/btn-share  hover:bg-light transition-all duration-300 ease-in-out">
+          <i
+            class="fa-solid fa-share text-[14px] text-light group-hover/btn-share:text-[black] transition-all duration-300 ease-in-out"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
