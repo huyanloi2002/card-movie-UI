@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Card Movie</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Nunito", sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @layer utilities {
+                
+                .bg-transparent-dark{
+                 background-image: linear-gradient(0deg, #000000, transparent 150%);
+                }
+                
+              }
+            </style>
+    <script>
+        tailwind.config = {
+            content: [
+
+            ],
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        light: "#ffffff",
+                        dark: "#000000",
+                        "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
+                        "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+                        "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+                        "opacity-light-0.1": "rgba(255, 255, 255, 0.1)",
+                        "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
+                        "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)",
+                        "opacity-dark-0.8": "rgba(0, 0, 0, 0.8)"
+                    },
+                    backgroundColor: {
+                        light: "#ffffff",
+                        dark: "#000000",
+                        "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
+                        "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+                        "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+                        "opacity-light-0.1": "rgba(255, 255, 255, 0.1)",
+                        "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
+                        "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)",
+                        "opacity-dark-0.8": "rgba(0, 0, 0, 0.7)"
+                    },
+                    border: {
+                        light: "#ffffff",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="h-[100vh] w-[100vw] flex justify-center items-center bg-opacity-dark-0.5">
+        <div
+            class="relative w-[250px] h-[400px]  cursor-pointer bg-light  rounded-xl shadow-md overflow-hidden hover:scale-90 duration-500 ease-in-out">
+            <img src="https://i.ebayimg.com/images/g/Dp4AAOSwkQBmS2Ek/s-l1200.jpg" alt="poster-url"
+                class="w-full h-full object-cover">
+            <div class="absolute bottom-0 w-full h-[100%] bg-transparent-dark"></div>
+            <div class="absolute top-3 right-3 flex flex-col gap-1 justify-center items-center z-[1]">
+                <span
+                    class="inline-flex items-center h-[35px] w-[35px] rounded-full border-2 border-light group hover:border-orange-400 duration-300 transition-all ease-in-out">
+                    <i
+                        class="fa-solid fa-heart text-light mx-auto text-[15px] group-hover:text-orange-400 duration-300 transition-all ease-in-out"></i>
+                </span>
+                <span
+                    class="inline-flex items-center h-[35px] w-[35px] rounded-full border-2 border-light group hover:border-orange-400 duration-300 transition-all ease-in-out">
+                    <i
+                        class=" fa-solid fa-plus text-light mx-auto text-[15px] group-hover:text-orange-400 duration-300 transition-all ease-in-out"></i>
+                </span>
+            </div>
+            <div class="absolute top-3 left-3 flex flex-col gap-1 justify-center items-start  z-[1]">
+                <div class="flex items-center gap-1 px-3 rounded-full h-[35px] bg-opacity-dark-0.8 text-[black]">
+                    <span class="inline-flex items-center">
+                        <i class="fa-solid fa-star text-orange-400 mx-auto text-[12px]"></i>
+                    </span>
+                    <p class="text-[12px] font-bold text-light tracking-wider">4.7/5.0</p>
+                </div>
+                <div class="flex flex-col gap-1 items-start justify-center">
+                    <span
+                        class="inline-flex items-center gap-1 text-light text-[12px] bg-opacity-dark-0.8 rounded-full p-3 py-2 text-center font-[800]">
+                        <img src="https://cdn-icons-png.freepik.com/256/11849/11849408.png?semt=ais_hybrid"
+                            alt="country-logo" class=" h-[11px] object-cover rounded-md">
+                        <p>USA</p>
+                    </span>
+                    <span
+                        class="inline-flex items-center text-light text-[12px] bg-opacity-dark-0.8 rounded-full p-3 py-2 text-center font-[800]">
+                        <p class="uppercase">Vietsub</p>
+                    </span>
+                    <span
+                        class="inline-flex items-center text-light text-[12px] bg-opacity-dark-0.8 rounded-full p-3 py-2 text-center font-[800]">
+                        <p class="uppercase">FHD</p>
+                    </span>
+                </div>
+            </div>
+            <div class="absolute bottom-3 w-full flex flex-col items-center justify-center z-[1]">
+                <p class="text-[17px] text-light font-[800]">Deadpool & Wolverine</p>
+                <div class=" flex flex-col items-center gap-1 justify-center">
+                    <div class="flex items-center gap-1 text-[10px] font-bold">
+                        <p class="text-opacity-light-0.6">2024</p>
+                        <i class="fa-solid fa-circle text-[3px] text-opacity-light-0.6"></i>
+                        <p class="text-opacity-light-0.6">Đang chiếu</p>
+                        <i class="fa-solid fa-circle text-[3px] text-opacity-light-0.6"></i>
+                        <p class="text-opacity-light-0.6">Phim lẻ</p>
+                    </div>
+                    <ul class="flex items-center gap-1">
+                        <li class="bg-orange-400  px-2 rounded-full text-[11px] font-[800] shadow-lg">Action</li>
+                        <li class="bg-orange-400  px-2 rounded-full text-[11px] font-[800] shadow-lg">Comedy</li>
+                        <li class="bg-orange-400  px-2 rounded-full text-[11px] font-[800] shadow-lg">Adventure</li>
+                    </ul>
+                    <div class="text-light text-[10px] flex gap-1 font-[500]">
+                        <span>#phimle</span>
+                        <span>#deadpool</span>
+                        <span>#wolverine</span>
+                        <span>#hanhdong</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute top-0 right-0 w-full h-full flex justify-center items-center">
+                <i
+                    class="fa-solid fa-play text-[50px] text-opacity-light-0.6 hover:scale-125 duration-300 transition-all ease-in-out"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
