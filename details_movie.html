@@ -26,7 +26,7 @@
         @layer utilities {
             
             .bg-transparent-dark{
-             background-image: linear-gradient(0deg, #161a1d, transparent 80%);
+             background-image: linear-gradient(0deg, #161a1d, transparent 100%);
             }
             
           }
@@ -55,6 +55,14 @@
                         "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
                         "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
                         "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)"
+                    },
+                    borderColor: {
+                        "opacity-light-0.3": "rgba(255, 255, 255, 0.3)",
+                        "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
+                        "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+                        "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+                        "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
+                        "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)"
                     }
                 }
             }
@@ -65,15 +73,15 @@
 <body>
     <div class="w-[100vw] h-[100vh] flex items-center justify-center bg-opacity-dark-0.5">
         <div class="relative w-[1300px] h-[800px]  cursor-pointer rounded-xl shadow-md overflow-hidden bg-dark-100">
-            <div class="relative h-[60%] w-full">
+            <div class="relative h-[50%] w-full">
                 <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/05/wolverine-and-deadpool-in-comic-accurate-mcu-costumes-in-deadpool-wolverine-s-official-trailer.jpg"
                     alt="thumb_url" class="h-full w-full object-cover object-top">
                 <div class="absolute bottom-0 w-full h-full bg-transparent-dark"></div>
             </div>
-            <div class="absolute bottom-10 p-12 w-full h-[500px] grid grid-cols-5 gap-7 text-light">
-                <div class="col-span-1 w-full h-full flex flex-col gap-5">
+            <div class="absolute bottom-0 px-12 w-full h-[500px] grid grid-cols-5 gap-12 text-light">
+                <div class="col-span-1 w-full h-full flex flex-col justify-start gap-5">
                     <img src="https://cdn.marvel.com/content/1x/dp3_1sht_digital_srgb_ka_swords_v5_resized.jpg"
-                        alt="poster_url" class="w-full h-[350px] object-cover rounded-lg">
+                        alt="poster_url" class="w-full h-[320px] object-cover rounded-lg">
                     <div class="h-[60px] w-full flex items-center justify-center gap-4">
                         <span
                             class="relative inline-flex items-center justify-center gap-1 rounded-full h-[55px] w-[55px] border-4 border-orange-400">
@@ -92,12 +100,103 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-3 w-full h-full">
-                    <p class="font-[800] text-[30px]">Deadpool & Wolverine</p>
-                    <span>
-                        <p>TIêu đề quốc tế:</p>
-                        <p></p>
+                <div class="relative col-span-3 w-full h-full flex flex-col gap-5">
+                    <span class="absolute top-0 right-0 inline-flex items-center gap-2">
+                        <span class="rounded-full px-4 py-1 bg-green-400 inline-flex items-center gap-2 shadow-lg">
+                            <i class="fa-solid fa-circle text-[5px] text-light"></i>
+                            <p class="text-[14px] font-[700] text-light font-[700]">Đang chiếu</p>
+                        </span>
+                        <span class="rounded-full px-4 py-1 bg-orange-400 inline-flex items-center gap-2 shadow-lg">
+                            <i class="fa-solid fa-film text-[10px] text-light"></i>
+                            <p class="text-[14px] font-[700] text-light">Phim lẻ</p>
+                        </span>
                     </span>
+                    <div class="flex flex-col gap-1">
+                        <p class="font-[800] text-[35px]">Deadpool & Wolverine</p>
+                        <span class="inline-flex items-center gap-1 text-opacity-light-0.6 font-[400]">
+                            <p>TIêu đề quốc tế:</p>
+                            <p>Deadpool & Wolverine</p>
+                        </span>
+                        <span class="inline-flex items-center gap-1 text-opacity-light-0.6 font-[400]">
+                            <p>Năm phát hành:</p>
+                            <p>2024</p>
+                        </span>
+                    </div>
+                    <div class="h-[50px] w-full flex items-center gap-3">
+                        <button
+                            class="inline-flex items-center justify-center h-[50px] gap-4 rounded-full bg-orange-400 min-w-[180px]">
+                            <p class="text-light text-[18px] font-[700]">Xem phim</p>
+                            <i class="fa-solid fa-play text-[22px]"></i>
+                        </button>
+                        <button class="inline-flex items-center h-[50px] w-[50px] rounded-full border-2 border-light">
+                            <i class="fa-solid fa-plus mx-auto text-[20px]"></i></button>
+                        <button class="inline-flex items-center h-[50px] w-[50px] rounded-full border-2 border-light">
+                            <i class="fa-solid fa-share-nodes mx-auto text-[20px]"></i></button>
+                    </div>
+                    <blockquote class="text-opacity-light-0.7 font-[500] w-[80%] line-clamp-5">
+                        Wolverine đang hồi phục sau những vết thương nghiêm trọng khi tình cờ gặp Deadpool, một kẻ
+                        lắm mồm và bốc đồng. Mặc dù
+                        hai người có tính cách hoàn toàn trái ngược, họ nhận ra rằng mình đang phải đối mặt với một
+                        kẻ thù chung nguy hiểm. Để
+                        bảo vệ thế giới và khôi phục hòa bình, Wolverine và Deadpool quyết định hợp tác. Cuộc chiến
+                        của họ không chỉ đòi hỏi sức
+                        mạnh và kỹ năng mà còn là bài kiểm tra cho sự phối hợp giữa hai cá tính mạnh mẽ.
+                    </blockquote>
+                    <div class="grid grid-cols-4 gap-3 w-full h-[180px]">
+                        <p class="font-[700] text-[24px] tracking-tight col-span-4">Thông tin chi tiết</p>
+                        <ul class="flex flex-col w-full h-full col-span-2">
+                            <li
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                <p class="font-[600] text-light w-[120px]">Thể loại:</p>
+                                <ul class="flex items-center gap-1">
+                                    <li
+                                        class="bg-opacity-light-0.6 px-3 rounded-full text-[12px] font-[800] shadow-lg text-dark-100">
+                                        Action
+                                    </li>
+                                    <li
+                                        class="bg-opacity-light-0.6 px-3 rounded-full text-[12px] font-[800] shadow-lg text-dark-100">
+                                        Comedy
+                                    </li>
+                                    <li
+                                        class="bg-opacity-light-0.6 px-3 rounded-full text-[12px] font-[800] shadow-lg text-dark-100">
+                                        Adventure</li>
+                                </ul>
+                            </li>
+                            <li
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                <p class="font-[600] text-light w-[120px]">Thời gian:</p>
+                                <p class="text-opacity-light-0.6">1 giờ 30 phút</p>
+                            </li>
+                            <li
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                <p class="font-[600] text-light w-[120px]">Tổng số:
+                                    tập</p>
+                                <p class="text-opacity-light-0.6">1 tập</p>
+                            </li>
+                        </ul>
+                        <ul class="flex flex-col w-full h-full col-span-2">
+                            <li
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                <p class="font-[600] text-light w-[120px]">Quốc gia:</p>
+                                <span class="inline-flex items-center gap-1 h-full">
+                                    <img src="https://cdn-icons-png.freepik.com/256/11849/11849408.png?semt=ais_hybrid"
+                                        alt="country-logo" class="h-[20px] object-cover rounded-md">
+                                    <p class="text-opacity-light-0.6">USA</p>
+                                </span>
+                            </li>
+                            <li
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                <p class="font-[600] text-light w-[120px]">Ngôn ngữ:</p>
+                                <p class="text-opacity-light-0.6">Vietsub</p>
+                            </li>
+                            <li
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                <p class="font-[600] text-light w-[120px]">Chất lượng:</p>
+                                <p class="text-opacity-light-0.6">FHD</p>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
                 <div class="col-span-1 w-full h-full">
 
