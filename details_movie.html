@@ -52,6 +52,7 @@
                         "dark-100": "#161a1d",
                         "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
                         "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+                        "opacity-light-0.1": "rgba(255, 255, 255, 0.1)",
                         "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
                         "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
                         "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)"
@@ -81,38 +82,37 @@
             <div class="absolute bottom-0 px-12 w-full h-[500px] grid grid-cols-5 gap-12 text-light">
                 <div class="col-span-1 w-full h-full flex flex-col justify-start gap-5">
                     <img src="https://cdn.marvel.com/content/1x/dp3_1sht_digital_srgb_ka_swords_v5_resized.jpg"
-                        alt="poster_url" class="w-full h-[320px] object-cover rounded-lg">
-                    <div class="h-[60px] w-full flex items-center justify-center gap-4">
+                        alt="poster_url" class="w-full h-[300px] object-cover rounded-lg">
+                    <div class="h-[60px] w-full flex items-center justify-center gap-1">
                         <span
-                            class="relative inline-flex items-center justify-center gap-1 rounded-full h-[55px] w-[55px] border-4 border-orange-400">
-                            <!-- <i class="fa-solid fa-star tracking-wider text-[20px] mx-auto"></i> -->
-                            <p class="text-light font-[800] z-10 text-[20px]">4.7</p>
+                            class="relative flex flex-col items-center justify-center rounded-full h-[55px] w-[55px] bg-opacity-light-0.1">
+                            <p class="text-light font-[800] z-10 text-[20px] text-orange-400">4.7</p>
                         </span>
-                        <div class="flex flex-col gap-1">
-                            <span class="inline-flex items-center gap-1">
-                                <p class="font-[700] text-[14px] text-light tracking-wide">2133</p>
+                        <div class="flex flex-col gap-2">
+                            <span class="inline-flex items-center justify-center gap-1 bg-opacity-light-0.1 py-1 px-3 rounded-full">
+                                <p class="font-[700] text-[14px] text-orange-400 tracking-wide">2133</p>
                                 <p class="font-[500] text-[12px] text-opacity-light-0.6">lượt xem</p>
                             </span>
-                            <span class="inline-flex items-center gap-1">
-                                <p class="font-[700] text-[14px] text-light tracking-wide">213,357</p>
+                            <span class="inline-flex items-center justify-center gap-1 bg-opacity-light-0.1 py-1 px-3 rounded-full">
+                                <p class="font-[700] text-[14px] text-orange-400 tracking-wide">213,357</p>
                                 <p class="font-[500] text-[12px] text-opacity-light-0.6">đánh giá</p>
                             </span>
                         </div>
                     </div>
                 </div>
-                <div class="relative col-span-3 w-full h-full flex flex-col gap-5">
-                    <span class="absolute top-0 right-0 inline-flex items-center gap-2">
-                        <span class="rounded-full px-4 py-1 bg-green-400 inline-flex items-center gap-2 shadow-lg">
+                <div class="relative col-span-3 w-full h-full flex flex-col gap-5 overflow-hidden py-5">
+                    <span class="absolute top-0 right-0 inline-flex flex-col items-end gap-2">
+                        <span class="rounded-full px-4 py-1 bg-green-500 inline-flex items-center gap-2 shadow-lg">
                             <i class="fa-solid fa-circle text-[5px] text-light"></i>
                             <p class="text-[14px] font-[700] text-light font-[700]">Đang chiếu</p>
                         </span>
-                        <span class="rounded-full px-4 py-1 bg-orange-400 inline-flex items-center gap-2 shadow-lg">
+                        <span class="rounded-full px-4 py-1 bg-opacity-light-0.5 inline-flex items-center gap-2 shadow-lg">
                             <i class="fa-solid fa-film text-[10px] text-light"></i>
                             <p class="text-[14px] font-[700] text-light">Phim lẻ</p>
-                        </span>
+                        </span>    
                     </span>
-                    <div class="flex flex-col gap-1">
-                        <p class="font-[800] text-[35px]">Deadpool & Wolverine</p>
+                    <div class="flex flex-col gap-1 w-full h-ful">
+                        <p class="font-[800] text-[32px] w-[75%] truncate">Deadpool & Wolverine</p>
                         <span class="inline-flex items-center gap-1 text-opacity-light-0.6 font-[400]">
                             <p>TIêu đề quốc tế:</p>
                             <p>Deadpool & Wolverine</p>
@@ -133,7 +133,7 @@
                         <button class="inline-flex items-center h-[50px] w-[50px] rounded-full border-2 border-light">
                             <i class="fa-solid fa-share-nodes mx-auto text-[20px]"></i></button>
                     </div>
-                    <blockquote class="text-opacity-light-0.7 font-[500] w-[80%] line-clamp-5">
+                    <blockquote class="text-opacity-light-0.7 font-[500] w-[80%] line-clamp-4">
                         Wolverine đang hồi phục sau những vết thương nghiêm trọng khi tình cờ gặp Deadpool, một kẻ
                         lắm mồm và bốc đồng. Mặc dù
                         hai người có tính cách hoàn toàn trái ngược, họ nhận ra rằng mình đang phải đối mặt với một
@@ -142,11 +142,11 @@
                         của họ không chỉ đòi hỏi sức
                         mạnh và kỹ năng mà còn là bài kiểm tra cho sự phối hợp giữa hai cá tính mạnh mẽ.
                     </blockquote>
-                    <div class="grid grid-cols-4 gap-3 w-full h-[180px]">
-                        <p class="font-[700] text-[24px] tracking-tight col-span-4">Thông tin chi tiết</p>
+                    <div class="grid grid-cols-4 gap-3 w-full grow">
+                        <p class="font-[800] text-[20px] tracking-tight col-span-4">Thông tin chi tiết</p>
                         <ul class="flex flex-col w-full h-full col-span-2">
                             <li
-                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[14px] font-[300]">
                                 <p class="font-[600] text-light w-[120px]">Thể loại:</p>
                                 <ul class="flex items-center gap-1">
                                     <li
@@ -158,48 +158,85 @@
                                         Comedy
                                     </li>
                                     <li
-                                        class="bg-opacity-light-0.6 px-3 rounded-full text-[12px] font-[800] shadow-lg text-dark-100">
+                                        class="bg-opacity-light-0.6 px-3 rounded-full text-[12px] font-[800] shadow-lg text-dark-100 ">
                                         Adventure</li>
                                 </ul>
                             </li>
                             <li
-                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[14px] font-[300]">
                                 <p class="font-[600] text-light w-[120px]">Thời gian:</p>
-                                <p class="text-opacity-light-0.6">1 giờ 30 phút</p>
+                                <p class="text-opacity-light-0.6 text-[12px]">1 giờ 30 phút</p>
                             </li>
                             <li
-                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
-                                <p class="font-[600] text-light w-[120px]">Tổng số:
-                                    tập</p>
-                                <p class="text-opacity-light-0.6">1 tập</p>
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[14px] font-[300] last:border-b-0">
+                                <p class="font-[600] text-light w-[120px]">Tổng số
+                                    tập:</p>
+                                <p class="text-opacity-light-0.6 text-[12px]">1 tập</p>
                             </li>
                         </ul>
                         <ul class="flex flex-col w-full h-full col-span-2">
                             <li
-                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[14px] font-[300]">
                                 <p class="font-[600] text-light w-[120px]">Quốc gia:</p>
                                 <span class="inline-flex items-center gap-1 h-full">
                                     <img src="https://cdn-icons-png.freepik.com/256/11849/11849408.png?semt=ais_hybrid"
                                         alt="country-logo" class="h-[20px] object-cover rounded-md">
-                                    <p class="text-opacity-light-0.6">USA</p>
+                                    <p class="text-opacity-light-0.6 text-[12px]">USA</p>
                                 </span>
                             </li>
                             <li
-                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[14px] font-[300]">
                                 <p class="font-[600] text-light w-[120px]">Ngôn ngữ:</p>
-                                <p class="text-opacity-light-0.6">Vietsub</p>
+                                <p class="text-opacity-light-0.6 text-[12px]">Vietsub</p>
                             </li>
                             <li
-                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[15px] font-[300]">
+                                class="border-b border-opacity-light-0.3 py-3 inline-flex items-center text-[14px] font-[300] last:border-b-0">
                                 <p class="font-[600] text-light w-[120px]">Chất lượng:</p>
-                                <p class="text-opacity-light-0.6">FHD</p>
+                                <p class="text-opacity-light-0.6 text-[12px]">FHD</p>
                             </li>
                         </ul>
 
                     </div>
                 </div>
-                <div class="col-span-1 w-full h-full">
-
+                <div class="col-span-1 w-full h-full py-5 flex flex-col gap-5">
+                    <div class="w-full flex flex-col gap-3">
+                        <p class="font-[800] text-[20px] tracking-tight col-span-4 grow-0">Diễn viên</p>
+                        <ul class="flex flex-col gap-4 grow-0  px-2">
+                            <li class="inline-flex items-center h-[50px] gap-3">
+                                <img src="https://m.media-amazon.com/images/M/MV5BODFmN2VmZmEtYTRjZi00ZjY1LTgxYjQtODMyNDI3ZDk4ZTJiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="avatar-1"
+                                 class="h-[50px] w-[50px] rounded-full object-cover"/>
+                                 <span class="flex flex-col">
+                                    <p class="text-[15px] font-[700]">Ryan Reynolds</p>
+                                    <p class="text-[12px] font-[500] text-opacity-light-0.6">vai Deadpool</p>
+                                 </span>
+                            </li>
+                            <li class="inline-flex items-center h-[50px] gap-3">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNDExMzIzNjk3Nl5BMl5BanBnXkFtZTcwOTE4NDU5OA@@._V1_.jpg" alt="avatar-1"
+                                 class="h-[50px] w-[50px] rounded-full object-cover"/>
+                                 <span class="flex flex-col">
+                                    <p class="text-[15px] font-[700]">Hugh Jackman</p>
+                                    <p class="text-[12px] font-[500] text-opacity-light-0.6">vai Wolverine</p>
+                                 </span>
+                            </li>
+                        </ul>
+                        <span class="inline-flex items-center gap-2 grow-0 mt-2">
+                            <p class="text-[13px] font-[700] text-orange-400">Xem tất cả</p>
+                            <i class="fa-regular fa-circle-right text-orange-400 text-[16px]"></i>
+                        </span>
+                    </div>
+                    <div class="w-full flex flex-col gap-3">
+                        <p class="font-[800] text-[20px] tracking-tight col-span-4 grow-0">Từ khoá</p>
+                        <ul class="px-2 flex flex-wrap gap-2">
+                            <li class="text-[12px] px-3 py-1 rounded-full bg-opacity-light-0.1 inline-flex items-center text-dark">#hanhdong</li>
+                            <li class="text-[12px] px-3 py-1 rounded-full bg-opacity-light-0.1 inline-flex items-center text-dark">#haihuoc</li>
+                            <li class="text-[12px] px-3 py-1 rounded-full bg-opacity-light-0.1 inline-flex items-center text-dark">#deadpool</li>
+                            <li class="text-[12px] px-3 py-1 rounded-full bg-opacity-light-0.1 inline-flex items-center text-dark">#wolverine</li>
+                            <li class="text-[12px] px-3 py-1 rounded-full bg-opacity-light-0.1 inline-flex items-center text-dark">#phieuluu</li>
+                            <li class="text-[12px] px-3 py-1 rounded-full bg-opacity-light-0.1 inline-flex items-center text-dark">#phimle</li>
+                            <li class="text-[12px] px-3 py-1 rounded-full bg-opacity-light-0.1 inline-flex items-center text-dark">#phimusa</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </div>
