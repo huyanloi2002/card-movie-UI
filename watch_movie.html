@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-<title>Watch Movie</title>
-<style>
-    body {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: "Nunito", sans-serif;
-        font-size: 13px;
-        font-weight: 500;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Watch Movie</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Nunito", sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+        }
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
-</style>
-<style type="text/tailwindcss">
-    @layer utilities {
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @layer utilities {
             
             .bg-transparent-dark{
              background-image: linear-gradient(0deg, #161a1d, transparent 100%);
@@ -34,53 +35,57 @@ head>
             
           }
         </style>
-<script>
-    tailwind.config = {
-        content: [
+    <script>
+        tailwind.config = {
+            content: [
 
-        ],
-        theme: {
-            extend: {
-                colors: {
-                    clifford: '#da373d',
-                    light: "#ffffff",
-                    "dark-100": "#161a1d",
-                    "opacity-light-0.7": "rgba(255, 255, 255, 0.7)",
-                    "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
-                    "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
-                    "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
-                    "opacity-dark-0.4": "rgba(0, 0, 0, 0.4)"
+            ],
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        light: "#ffffff",
+                        "dark-100": "#161a1d",
+                        "opacity-light-0.7": "rgba(255, 255, 255, 0.7)",
+                        "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
+                        "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+                        "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+                        "opacity-dark-0.4": "rgba(0, 0, 0, 0.4)"
 
-                },
-                backgroundColor: {
-                    light: "#ffffff",
-                    "dark-100": "#161a1d",
-                    "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
-                    "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
-                    "opacity-light-0.1": "rgba(255, 255, 255, 0.1)",
-                    "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
-                    "opacity-light-0.3": "rgba(255, 255, 255, 0.3)",
-                    "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
-                    "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)",
-                    "opacity-dark-0.2": "rgba(0, 0, 0, 0.2)"
-                },
-                borderColor: {
-                    "opacity-light-0.3": "rgba(255, 255, 255, 0.3)",
-                    "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
-                    "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
-                    "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
-                    "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
-                    "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)"
+                    },
+                    backgroundColor: {
+                        light: "#ffffff",
+                        "dark-100": "#161a1d",
+                        "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
+                        "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+                        "opacity-light-0.1": "rgba(255, 255, 255, 0.1)",
+                        "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+                        "opacity-light-0.3": "rgba(255, 255, 255, 0.3)",
+                        "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
+                        "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)",
+                        "opacity-dark-0.2": "rgba(0, 0, 0, 0.2)"
+                    },
+                    borderColor: {
+                        "opacity-light-0.3": "rgba(255, 255, 255, 0.3)",
+                        "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
+                        "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
+                        "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+                        "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
+                        "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)"
+                    }
                 }
             }
         }
-    }
-</script>
+    </script>
 
 </head>
 
 <body>
-
+    <div class="w-[100vw] h-[100vh] flex items-center justify-center bg-opacity-dark-0.5">
+        <div
+            class="relative w-[1300px] h-[calc(100vh-100px)] cursor-pointer rounded-xl shadow-md bg-light overflow-hidden">
+        </div>
+    </div>
 </body>
 
 </html>
