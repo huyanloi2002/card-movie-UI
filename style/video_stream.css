@@ -1,0 +1,49 @@
+.vjs-control-bar {
+    background-color: transparent !important;
+    bottom: 0.5rem !important;
+    padding: 0px 0.3rem 0 0.3rem;
+}
+
+.video-js .vjs-play-progress {
+    background-color: orange !important;
+}
+
+.video-js .vjs-big-play-button {
+    padding: 0 !important;
+    border-radius: 50% !important;
+    border: 2px solid orange !important;
+    background-color: transparent !important;
+    height: 60px !important;
+    width: 60px !important;
+    margin-left: -1.0em !important;
+    margin-top: -1em !important;
+    box-shadow: 0px 0px 15px orange;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+    font-size: 3rem;
+    margin-top: 6px;
+    color: orange;
+
+}
+
+.vjs-current-time {
+    color: orange !important;
+}
+
+.video-js .vjs-mouse-display {
+    background-color: transparent !important;
+}
+
+.video-js .vjs-mouse-display .vjs-time-tooltip {
+    background-color: transparent !important;
+    font-size: 0.7rem !important;
+}
+
+
+.video-js .vjs-play-progress .vjs-time-tooltip {
+    background-color: orange !important;
+    color: black;
+    font-weight: 700;
+    font-size: 0.7rem !important;
+}
