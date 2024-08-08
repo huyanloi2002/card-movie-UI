@@ -53,6 +53,8 @@
                         "opacity-light-0.8": "rgba(255, 255, 255, 0.8)",
                         "opacity-light-0.6": "rgba(255, 255, 255, 0.6)",
                         "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
+                        "opacity-light-0.2": "rgba(255, 255, 255, 0.2)",
+
                         "opacity-dark-0.4": "rgba(0, 0, 0, 0.4)"
 
                     },
@@ -64,6 +66,9 @@
                         "opacity-light-0.1": "rgba(255, 255, 255, 0.1)",
                         "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
                         "opacity-light-0.3": "rgba(255, 255, 255, 0.3)",
+                        "opacity-light-0.2": "rgba(255, 255, 255, 0.2)",
+                        "opacity-light-0.1": "rgba(255, 255, 255, 0.1)",
+
                         "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
                         "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)",
                         "opacity-dark-0.2": "rgba(0, 0, 0, 0.2)"
@@ -75,6 +80,15 @@
                         "opacity-light-0.5": "rgba(255, 255, 255, 0.5)",
                         "opacity-dark-0.5": "rgba(0, 0, 0, 0.5)",
                         "opacity-dark-0.6": "rgba(0, 0, 0, 0.6)"
+                    },
+                    animation: {
+                        'width-to-full': 'width-to-full 0.5s linear'
+                    },
+                    keyframes: {
+                        "width-to-full": {
+                            '0%': { width: "0%" },
+                            "100%": { width: "400px" }
+                        }
                     }
                 }
             }
@@ -85,16 +99,65 @@
 
 <body>
     <div class="w-[100vw] h-[100vh] flex items-center justify-center bg-opacity-dark-0.5">
-        <div
-            class="relative w-[1300px] h-[calc(100vh-100px)] cursor-pointer rounded-xl shadow-md bg-light overflow-hidden">
+        <div id="video-main"
+            class="relative w-[1300px] h-[calc(100vh-100px)] cursor-pointer rounded-xl shadow-md bg-light overflow-hidden group">
 
             <!-- <iframe src="https://vip.opstream13.com/share/e36258b3c74f08054a974a5fe1703f9c" class="w-full h-full"
                 frameborder="0"></iframe> -->
-            <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;height: 100%;"
+            <video id="my-video" class="video-js relative" controls preload="auto" style="width: 100%;height: 100%;"
                 data-setup="{}">
                 <source src="https://vip.opstream13.com/20240802/5022_29a298dc/index.m3u8" type="application/x-mpegURL">
             </video>
-
+            <div class="absolute top-2 right-2 flex flex-col gap-2 items-end">
+                <ul
+                    class="flex justify-center items-center gap-2 h-[50px] w-[100px] bg-opacity-light-0.5 rounded-full opacity-0 group-hover:opacity-100 duration-300">
+                    <li id="btn-film"
+                        class="inline-flex items-center gap-2 w-[35px] h-[35px] rounded-full bg-orange-400 hover:ring-2 hover:ring-orange-400 hover:ring-offset-2 duration-300 ease-in-out">
+                        <i class="fa-solid fa-film text-light mx-auto text-[15px]"></i>
+                    </li>
+                    <li id="btn-comment"
+                        class="inline-flex items-center gap-2 w-[35px] h-[35px] rounded-full bg-orange-400 hover:ring-2 hover:ring-orange-400 hover:ring-offset-2 duration-300 ease-in-out">
+                        <i class="fa-solid fa-message text-light mx-auto text-[15px]"></i>
+                    </li>
+                </ul>
+            </div>
+            <div id="episode-content"
+                class="absolute bottom-12 left-5 bg-opacity-light-0.2 rounded-xl px-3 py-4 flex flex-col gap-3 items-start">
+                <ul class="flex flex-wrap text-light w-full gap-2 max-w-[460px]">
+                    <li
+                        class="h-[50px] w-[70px] rounded-md bg-opacity-light-0.1 inline-flex justify-center items-center uppercase font-[800] text-[15px]">
+                        <p></p>1
+                    </li>
+                    <li
+                        class="h-[50px] w-[70px] rounded-md bg-opacity-light-0.1 inline-flex justify-center items-center uppercase font-[800] text-[15px]">
+                        <p></p>2
+                    </li>
+                    <li
+                        class="h-[50px] w-[70px] rounded-md bg-opacity-light-0.1 inline-flex justify-center items-center uppercase font-[800] text-[15px]">
+                        <p></p>3
+                    </li>
+                    <li
+                        class="h-[50px] w-[70px] rounded-md bg-opacity-light-0.1 inline-flex justify-center items-center uppercase font-[800] text-[15px]">
+                        <p></p>4
+                    </li>
+                    <li
+                        class="h-[50px] w-[70px] rounded-md bg-opacity-light-0.1 inline-flex justify-center items-center uppercase font-[800] text-[15px]">
+                        <p></p>5
+                    </li>
+                    <li
+                        class="h-[50px] w-[70px] rounded-md bg-opacity-light-0.1 inline-flex justify-center items-center uppercase font-[800] text-[15px]">
+                        <p></p>6
+                    </li>
+                    <li
+                        class="h-[50px] w-[70px] rounded-md bg-opacity-light-0.1 inline-flex justify-center items-center uppercase font-[800] text-[15px]">
+                        <p></p>7
+                    </li>
+                    <li
+                        class="h-[50px] w-[70px] rounded-md bg-opacity-light-0.1 inline-flex justify-center items-center uppercase font-[800] text-[15px]">
+                        <p></p>8
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <script>
